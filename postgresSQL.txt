@@ -1,0 +1,40 @@
+SELECT * FROM (GET VALUE: ALL)
+SELECT NAME FROM (GET VALUE: NAME)
+WHERE (GET SPECIFIED PROPERTIES)
+WHERE AND
+WHERE OR
+ IN ('  ') 
+BETWEEN (GET VALUE BETWEEN)
+COUNT(*) (COUNT FROM DATA)
+ORDER BY (SORTING ACCESS DEFAULT)
+DISTINCT PP (LIST DISTINCT VALUE)
+LIMIT N (GET N VALUE)
+OFFSET N (GET ALL VALUE AFTER N)
+FLETCH N (GET N VALUE AFTER)
+GROUP BY (GO WITH COUNT)
+AS (ALIAS THE NAME FOR COLUMN of new item)
+COALESCE(PROVIDE DEFAULT VALUE FOR WHICH DON'T HAVE)
+NULLIF(a,b): (RETURN a if a!=b or null )
+NOW(): RETURN ACTUAL TIME
+NOW()::DATE
+NOW()::TIME
+INTERVAL '?' : SUBTRACT SOME THING
+EXTRACT( PP FROM ...) GET EXTRACTLY VALUE
+AGE(NOW(), date): get age in exactly time
+ALTER TABLE tab_name DROP CONSTRAINT name_key;(delete primary key)
+ALTER TABLE tab_name ADD PRIMARY KEY(name);(add new primary key)
+ALTER TABLE tab_name ADD CONSTRAINT unique_name UNIQUE(name): add new pk
+ALTER TABLE tab_name ADD CONSTRAINT constraint_name CHECK( name='' OR-AND...):check before add new value
+DELETE FROM tab_name WHERE ...(delete value)
+INSERT INTO tab_name (properties) VALUES (...)(insert value)
+UPDATE tab_name SET properties=new value WHERE ....
+...ON CONFLICT (pp) DO NOTHING: handle exception,Do nothing, pp must be Primary key
+JOIN tab_name ON PRMKEY1 = PRMKEY 2
+SELECT * FROM tab_name WHERE pp IS NULL: select null value
+\copy (SELECT * FROM tab_name...) TO 'C:/DIRECT' DELIMITER ',' CSV HEADER: SAVE TO CSV FILE
+ALTER SEQUENCE seq_id RESTART WITH 10: restart the sequence
+
+
+
+LingQ in C#:
+source + conditional + (order,function...) +select properties
